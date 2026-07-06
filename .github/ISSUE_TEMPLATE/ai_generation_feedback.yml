@@ -1,0 +1,46 @@
+name: AI Generation Feedback
+description: Report where an AI tool followed or missed the IntentFlow contract.
+title: "[AI Feedback]: "
+labels: ["ai", "feedback"]
+body:
+  - type: dropdown
+    id: tool
+    attributes:
+      label: Tool
+      options:
+        - Codex
+        - Claude Code
+        - Gemini CLI
+        - GitHub Copilot
+        - Cursor
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: prompt
+    attributes:
+      label: Prompt Or Task
+      description: What did you ask the tool to do?
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Outcome
+      description: What worked, failed, or drifted from the manifest?
+    validations:
+      required: true
+  - type: textarea
+    id: manifest
+    attributes:
+      label: Manifest Or Contract
+      description: Include the relevant manifest excerpt or link.
+      render: yaml
+    validations:
+      required: false
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested Rule Or Generator Improvement
+    validations:
+      required: false

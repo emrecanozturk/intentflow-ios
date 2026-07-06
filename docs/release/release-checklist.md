@@ -17,18 +17,18 @@ Use this checklist before publishing a tag.
 ## Tag
 
 ```bash
-git tag 0.1.0
+git tag <version>
 git push origin main --tags
 ```
 
 ## Recommended GitHub Release Notes
 
 ```markdown
-IntentFlow 0.1.0 introduces a workflow-first iOS architecture with:
+IntentFlow <version> introduces a workflow-first iOS architecture with:
 
 - Core runtime
 - AI manifest mode
-- Generator and validator CLI
+- Generator, validator, and AI context CLI
 - SwiftUI and UIKit examples
 - Migration guides
 - Pattern research matrix

@@ -1,6 +1,8 @@
 # Changelog
 
-## Unreleased
+## 0.1.1
+
+Launch-ready AI agent support release.
 
 Added:
 
@@ -9,6 +11,8 @@ Added:
 - token-budgeting and agent-usage documentation
 - path-scoped Claude and Copilot rules
 - reusable AI prompt templates under `.intentflow/prompts`
+- launch kit, FAQ, quick start, and social preview asset
+- issue templates for AI generation feedback and adoption questions
 
 ## 0.1.0
 

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Launch Kit
+    url: https://github.com/emrecanozturk/intentflow-ios/blob/main/docs/launch/launch-kit.md
+    about: Use this for announcement copy and public positioning.
+  - name: Quick Start
+    url: https://github.com/emrecanozturk/intentflow-ios/blob/main/docs/adoption/quick-start.md
+    about: Start here if you want to try IntentFlow on one feature.

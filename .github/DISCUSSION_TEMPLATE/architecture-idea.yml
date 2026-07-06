@@ -1,0 +1,17 @@
+title: "[Architecture Idea] "
+labels: ["architecture"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Idea
+      description: What should IntentFlow model differently or better?
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Example Workflow
+      description: Show the states, intents, effects, routes, or acceptance traces if possible.
+    validations:
+      required: false

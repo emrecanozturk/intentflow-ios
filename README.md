@@ -2,16 +2,48 @@
 
 [![CI](https://github.com/emrecanozturk/intentflow-ios/actions/workflows/ci.yml/badge.svg)](https://github.com/emrecanozturk/intentflow-ios/actions/workflows/ci.yml)
 [![Documentation](https://github.com/emrecanozturk/intentflow-ios/actions/workflows/docs.yml/badge.svg)](https://github.com/emrecanozturk/intentflow-ios/actions/workflows/docs.yml)
+[![Release](https://img.shields.io/github/v/release/emrecanozturk/intentflow-ios)](https://github.com/emrecanozturk/intentflow-ios/releases)
+[![License](https://img.shields.io/github/license/emrecanozturk/intentflow-ios)](LICENSE)
+![Swift](https://img.shields.io/badge/Swift-6.0-orange)
+![iOS](https://img.shields.io/badge/iOS-16%2B-blue)
+![AI Ready](https://img.shields.io/badge/AI-ready-6d28d9)
 
-IntentFlow is a workflow-first architecture for iOS apps.
+<img src="docs/assets/social-preview.svg" alt="IntentFlow for iOS: workflow-first, typed, testable, AI-ready architecture." width="100%">
 
-It treats a feature as explicit product behavior:
+IntentFlow is a workflow-first, AI-ready architecture for iOS apps. It makes product behavior explicit, typed, testable, and safer for coding agents to extend.
+
+It treats a feature as executable behavior:
 
 ```text
 State + Intent/Event -> Next State + Effects + Outputs + Routes
 ```
 
 The goal is not to invent another folder naming convention. MVC, MVVM, VIPER, Clean, Coordinators, Redux, MVI, TCA, and RIBs all solved real problems. IntentFlow starts where those patterns usually become unclear: async workflows, side effects, cancellation, navigation, recovery, observability, and AI-assisted code generation.
+
+## Try It In 60 Seconds
+
+```bash
+git clone https://github.com/emrecanozturk/intentflow-ios.git
+cd intentflow-ios
+swift test
+swift run intentflow validate .intentflow/login.intentflow.yaml
+swift run intentflow ai-context .intentflow/login.intentflow.yaml --tool codex
+```
+
+Generate a feature:
+
+```bash
+swift run intentflow feature Checkout --mode ai --ui swiftui --output /tmp/intentflow-demo
+```
+
+## Use It When
+
+- a ViewModel is becoming a workflow engine
+- async retry, cancellation, and recovery paths are hard to test
+- navigation decisions are scattered across screens
+- parent communication is hidden in callbacks
+- AI-generated code looks plausible but drifts from architecture rules
+- you want one contract that humans and coding agents can both follow
 
 ## Why This Exists
 
@@ -68,6 +100,13 @@ swift run intentflow ai-context .intentflow/login.intentflow.yaml --tool codex
 ```
 
 See [AI Agent Usage](docs/ai/agent-usage.md) and [Context Budgeting](docs/ai/context-budgeting.md).
+
+## Launch Resources
+
+- [Quick Start](docs/adoption/quick-start.md)
+- [FAQ](docs/faq.md)
+- [Launch Kit](docs/launch/launch-kit.md)
+- [IntentFlow 0.1.1 Release](docs/release/0.1.1.md)
 
 ## What It Completes
 
@@ -156,7 +195,7 @@ struct LoginFlow: FlowReducer {
 Add the package to `Package.swift`:
 
 ```swift
-.package(url: "https://github.com/emrecanozturk/intentflow-ios.git", from: "0.1.0")
+.package(url: "https://github.com/emrecanozturk/intentflow-ios.git", from: "0.1.1")
 ```
 
 Then depend on the target:
@@ -270,6 +309,9 @@ swift run intentflow validate .intentflow/login.intentflow.yaml
 - [IntentFlow AI](docs/ai/intentflow-ai.md)
 - [AI Agent Usage](docs/ai/agent-usage.md)
 - [Context Budgeting](docs/ai/context-budgeting.md)
+- [Quick Start](docs/adoption/quick-start.md)
+- [FAQ](docs/faq.md)
+- [Launch Kit](docs/launch/launch-kit.md)
 - [Migration Guide](docs/migration/migration-guide.md)
 - [Memory and Concurrency](docs/advanced/memory-and-concurrency.md)
 - [Generator](docs/generator.md)

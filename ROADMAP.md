@@ -2,11 +2,11 @@
 
 IntentFlow is release-ready as a 0.1 architecture proposal. The roadmap is intentionally focused on adoption quality.
 
-## 0.1.0
+## 0.1.x
 
 - Core runtime
 - AI manifest mode
-- Generator and validator CLI
+- Generator, validator, and AI context CLI
 - SwiftUI and UIKit examples
 - Buildable demo app
 - Migration guides

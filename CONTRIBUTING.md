@@ -8,7 +8,25 @@ Run:
 
 ```bash
 swift test
+swift run intentflow validate .intentflow/login.intentflow.yaml
 ```
+
+For release-facing changes, run:
+
+```bash
+./scripts/check.sh
+```
+
+## Good First Feedback
+
+If you are trying IntentFlow for the first time, the most useful feedback is:
+
+- a feature that mapped cleanly to states/intents/effects
+- a feature that did not map cleanly
+- an AI-generated change that ignored the manifest
+- a migration pain from MVC, MVVM, Coordinators, VIPER, Clean, TCA, or RIBs
+
+Use the AI Generation Feedback or Adoption Question issue templates when possible.
 
 ## Pull Request Checklist
 
@@ -19,6 +37,7 @@ swift test
 - New workflow branches have tests.
 - AI mode features update the manifest and rules if needed.
 - Documentation is updated when the architecture contract changes.
+- Launch-facing changes update the FAQ, quick start, launch kit, or release notes when relevant.
 
 ## Style
 

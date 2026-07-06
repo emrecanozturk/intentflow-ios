@@ -1,0 +1,34 @@
+name: Adoption Question
+description: Ask how to model or migrate a feature with IntentFlow.
+title: "[Adoption]: "
+labels: ["question", "adoption"]
+body:
+  - type: textarea
+    id: feature
+    attributes:
+      label: Feature Workflow
+      description: Describe the states, user actions, async work, navigation, and outputs.
+    validations:
+      required: true
+  - type: dropdown
+    id: current_pattern
+    attributes:
+      label: Current Pattern
+      options:
+        - MVC
+        - MVVM
+        - VIPER
+        - Clean Architecture
+        - Coordinator
+        - TCA
+        - RIBs
+        - Other
+    validations:
+      required: false
+  - type: textarea
+    id: friction
+    attributes:
+      label: Current Pain
+      description: What is hard to test, reason about, or generate safely?
+    validations:
+      required: false
