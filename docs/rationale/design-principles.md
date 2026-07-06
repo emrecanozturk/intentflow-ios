@@ -10,11 +10,13 @@ Bad starting point:
 Create LoginViewModel.
 ```
 
-Better starting point:
+Better starting point for a login feature:
 
 ```text
 Define LoginState, LoginIntent, LoginEvent, LoginEffect, LoginOutput, and LoginRoute.
 ```
+
+For a different feature, use that feature's own contract types.
 
 ## 2. Reducers Are Pure
 

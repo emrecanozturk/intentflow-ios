@@ -135,7 +135,7 @@ flowchart LR
     Projection -->|ViewState| UI
 ```
 
-Every feature starts with the contract:
+Every feature starts with its own contract. The `Login` types below are only an example shape; real apps define these types per feature, such as `CheckoutState`, `UploadIntent`, or `PermissionEvent`.
 
 ```swift
 enum LoginState: Equatable, Sendable {
@@ -161,7 +161,7 @@ enum LoginEvent: Equatable, Sendable {
 }
 ```
 
-Then the reducer owns behavior:
+Then that feature's reducer owns behavior:
 
 ```swift
 struct LoginFlow: FlowReducer {
@@ -265,7 +265,7 @@ See [IntentFlow AI](docs/ai/intentflow-ai.md).
 
 ## Testing
 
-Reducers are pure, so behavior can be tested without UI:
+Reducers are pure, so behavior can be tested without UI. This example continues the sample `LoginFlow`; your tests use your own feature flow and states.
 
 ```swift
 let trace = LoginFlow().trace(
