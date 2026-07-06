@@ -105,7 +105,6 @@ See [AI Agent Usage](docs/ai/agent-usage.md) and [Context Budgeting](docs/ai/con
 
 - [Quick Start](docs/adoption/quick-start.md)
 - [FAQ](docs/faq.md)
-- [Launch Kit](docs/launch/launch-kit.md)
 - [IntentFlow 0.1.1 Release](docs/release/0.1.1.md)
 
 ## What It Completes
@@ -311,7 +310,6 @@ swift run intentflow validate .intentflow/login.intentflow.yaml
 - [Context Budgeting](docs/ai/context-budgeting.md)
 - [Quick Start](docs/adoption/quick-start.md)
 - [FAQ](docs/faq.md)
-- [Launch Kit](docs/launch/launch-kit.md)
 - [Migration Guide](docs/migration/migration-guide.md)
 - [Memory and Concurrency](docs/advanced/memory-and-concurrency.md)
 - [Generator](docs/generator.md)
