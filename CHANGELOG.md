@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.1.2
+
+Cleaned launch release.
+
+Changed:
+
+- clarifies that README `Login` contract types are examples, not required shared app types
+- removes personal launch copy from public documentation
+- keeps public first-visit docs focused on quick start, FAQ, examples, and AI agent usage
+
 ## 0.1.1
 
 Launch-ready AI agent support release.

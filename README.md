@@ -105,7 +105,7 @@ See [AI Agent Usage](docs/ai/agent-usage.md) and [Context Budgeting](docs/ai/con
 
 - [Quick Start](docs/adoption/quick-start.md)
 - [FAQ](docs/faq.md)
-- [IntentFlow 0.1.1 Release](docs/release/0.1.1.md)
+- [IntentFlow 0.1.2 Release](docs/release/0.1.2.md)
 
 ## What It Completes
 
@@ -194,7 +194,7 @@ struct LoginFlow: FlowReducer {
 Add the package to `Package.swift`:
 
 ```swift
-.package(url: "https://github.com/emrecanozturk/intentflow-ios.git", from: "0.1.1")
+.package(url: "https://github.com/emrecanozturk/intentflow-ios.git", from: "0.1.2")
 ```
 
 Then depend on the target:
