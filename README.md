@@ -1,5 +1,8 @@
 # IntentFlow for iOS
 
+[![CI](https://github.com/emrecanozturk/intentflow-ios/actions/workflows/ci.yml/badge.svg)](https://github.com/emrecanozturk/intentflow-ios/actions/workflows/ci.yml)
+[![Documentation](https://github.com/emrecanozturk/intentflow-ios/actions/workflows/docs.yml/badge.svg)](https://github.com/emrecanozturk/intentflow-ios/actions/workflows/docs.yml)
+
 IntentFlow is a workflow-first architecture for iOS apps.
 
 It treats a feature as explicit product behavior:
@@ -61,6 +64,19 @@ AI mode is the architecture plus a machine-readable contract so AI tools know wh
 
 ## Architecture Shape
 
+```mermaid
+flowchart LR
+    UI["SwiftUI / UIKit Adapter"] -->|Intent| Store["FlowStore Actor"]
+    Store --> Reducer["Pure FlowReducer"]
+    Reducer -->|Next State| Store
+    Reducer -->|EffectRequest| Effects["FlowEffectHandler"]
+    Reducer -->|Route| Router["App Router"]
+    Reducer -->|Output| Parent["Parent Flow / App Shell"]
+    Effects -->|Event| Store
+    Store --> Projection["FlowProjection"]
+    Projection -->|ViewState| UI
+```
+
 Every feature starts with the contract:
 
 ```swift
@@ -120,7 +136,7 @@ struct LoginFlow: FlowReducer {
 Add the package to `Package.swift`:
 
 ```swift
-.package(url: "https://github.com/<account>/intentflow-ios.git", from: "0.1.0")
+.package(url: "https://github.com/emrecanozturk/intentflow-ios.git", from: "0.1.0")
 ```
 
 Then depend on the target:
@@ -138,7 +154,7 @@ For AI mode:
 ## Generate a Feature
 
 ```bash
-swift run intentflow-generate feature Checkout --mode ai --ui swiftui --output ./Sources/Features
+swift run intentflow feature Checkout --mode ai --ui swiftui --output ./Sources/Features
 ```
 
 Generated files:
@@ -155,8 +171,10 @@ Checkout/
 
 ## Examples
 
+- [Buildable Demo App](Examples/IntentFlowDemoApp)
 - [SwiftUI Device Connection](Examples/SwiftUIExample)
 - [UIKit Upload Retry](Examples/UIKitExample)
+- [MVVM to IntentFlow Migration](Examples/Migration/MVVMToIntentFlow)
 
 The examples intentionally model workflows that MVVM view models often absorb: trust checks, connection state, progress, retry, cancellation, and output routing.
 
@@ -221,16 +239,19 @@ Run:
 
 ```bash
 swift test
+swift run intentflow validate .intentflow/login.intentflow.yaml
 ```
 
 ## Documentation
 
 - [Pattern Research Matrix](docs/rationale/pattern-research-matrix.md)
+- [Manifesto](docs/manifesto.md)
 - [Design Principles](docs/rationale/design-principles.md)
 - [IntentFlow AI](docs/ai/intentflow-ai.md)
 - [Migration Guide](docs/migration/migration-guide.md)
 - [Memory and Concurrency](docs/advanced/memory-and-concurrency.md)
 - [Generator](docs/generator.md)
+- [Roadmap](ROADMAP.md)
 
 ## Project Status
 

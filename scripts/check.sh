@@ -2,4 +2,12 @@
 set -euo pipefail
 
 swift test
-swift run intentflow-generate feature SmokeFeature --mode ai --ui none --output /tmp/intentflow-smoke
+swift run intentflow feature SmokeFeature --mode ai --ui none --output /tmp/intentflow-smoke
+swift run intentflow validate .intentflow/login.intentflow.yaml
+xcodebuild \
+  -project Examples/IntentFlowDemoApp/IntentFlowDemoApp.xcodeproj \
+  -scheme IntentFlowDemoApp \
+  -destination 'generic/platform=iOS Simulator' \
+  CODE_SIGNING_ALLOWED=NO \
+  build
+xcodebuild docbuild -scheme IntentFlow -destination 'generic/platform=macOS'

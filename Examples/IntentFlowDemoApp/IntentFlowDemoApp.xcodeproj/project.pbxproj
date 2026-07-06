@@ -1,0 +1,387 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02C14C789C21845F01E869D8 /* CheckoutDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2AEF17D617027345AA076E /* CheckoutDemo.swift */; };
+		0ACCE73C562017B9C35A029C /* IntentFlowDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DDBBAD9EAB1636B4F73DF1 /* IntentFlowDemoApp.swift */; };
+		132865EE2B6354CAA3F2B64D /* LoginDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12961EE16A4394E6DC3435AA /* LoginDemo.swift */; };
+		1CCE1351E4054D37784F2D6D /* ExampleIndexScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED22A985879055712BFF8D9 /* ExampleIndexScreen.swift */; };
+		7BB92A9D91DA8F010C49E185 /* PermissionDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A588016E75440791842C730B /* PermissionDemo.swift */; };
+		869C9F1E2A3A63144FF05E21 /* DemoRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6447302000CF1E35F7B9EBC2 /* DemoRootView.swift */; };
+		ABBCF248D94118316A071D3A /* IntentFlow in Frameworks */ = {isa = PBXBuildFile; productRef = 7A51AA580E50023622F80CA6 /* IntentFlow */; };
+		D4354B3720B92A6B133B7A8F /* DemoStoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432D15F3B102F4A3D4A241C3 /* DemoStoreModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		12961EE16A4394E6DC3435AA /* LoginDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDemo.swift; sourceTree = "<group>"; };
+		432D15F3B102F4A3D4A241C3 /* DemoStoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoStoreModel.swift; sourceTree = "<group>"; };
+		58DDBBAD9EAB1636B4F73DF1 /* IntentFlowDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentFlowDemoApp.swift; sourceTree = "<group>"; };
+		6447302000CF1E35F7B9EBC2 /* DemoRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoRootView.swift; sourceTree = "<group>"; };
+		72887CAD6595C86B9F8B9DDD /* intentflow-ios */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "intentflow-ios"; path = ../..; sourceTree = SOURCE_ROOT; };
+		7ED22A985879055712BFF8D9 /* ExampleIndexScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleIndexScreen.swift; sourceTree = "<group>"; };
+		81581CF8D0E30B30A47C4CD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8C2AEF17D617027345AA076E /* CheckoutDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutDemo.swift; sourceTree = "<group>"; };
+		A588016E75440791842C730B /* PermissionDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionDemo.swift; sourceTree = "<group>"; };
+		E997774490A51D3769D3551C /* IntentFlowDemoApp.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = IntentFlowDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9EBA735576B6E00D7EE31C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABBCF248D94118316A071D3A /* IntentFlow in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10813C266A6E081ADC8FA237 /* IntentFlowDemoApp */ = {
+			isa = PBXGroup;
+			children = (
+				6447302000CF1E35F7B9EBC2 /* DemoRootView.swift */,
+				7ED22A985879055712BFF8D9 /* ExampleIndexScreen.swift */,
+				58DDBBAD9EAB1636B4F73DF1 /* IntentFlowDemoApp.swift */,
+				9E8EC3FED19A1F87AD4285DD /* Features */,
+				4210B7D01F43B5FAD274C701 /* Support */,
+			);
+			path = IntentFlowDemoApp;
+			sourceTree = "<group>";
+		};
+		4210B7D01F43B5FAD274C701 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				432D15F3B102F4A3D4A241C3 /* DemoStoreModel.swift */,
+				81581CF8D0E30B30A47C4CD2 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		4D15958CCAC836C39CE670CF /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				12961EE16A4394E6DC3435AA /* LoginDemo.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		81D815BBDAB38827100DB5BA /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				72887CAD6595C86B9F8B9DDD /* intentflow-ios */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		82006F63FF7FE25F33A94A40 = {
+			isa = PBXGroup;
+			children = (
+				10813C266A6E081ADC8FA237 /* IntentFlowDemoApp */,
+				81D815BBDAB38827100DB5BA /* Packages */,
+				A96AA110B703E121D0D588B0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8443551E14739EDF63367E94 /* Permissions */ = {
+			isa = PBXGroup;
+			children = (
+				A588016E75440791842C730B /* PermissionDemo.swift */,
+			);
+			path = Permissions;
+			sourceTree = "<group>";
+		};
+		9E8EC3FED19A1F87AD4285DD /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				F0F5A247784F657E117983B8 /* Checkout */,
+				4D15958CCAC836C39CE670CF /* Login */,
+				8443551E14739EDF63367E94 /* Permissions */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		A96AA110B703E121D0D588B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E997774490A51D3769D3551C /* IntentFlowDemoApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0F5A247784F657E117983B8 /* Checkout */ = {
+			isa = PBXGroup;
+			children = (
+				8C2AEF17D617027345AA076E /* CheckoutDemo.swift */,
+			);
+			path = Checkout;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1CC5AF0D516853873302BEE4 /* IntentFlowDemoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A6A8463341B5AECC1AD0197 /* Build configuration list for PBXNativeTarget "IntentFlowDemoApp" */;
+			buildPhases = (
+				92F2128647000C3354EF8580 /* Sources */,
+				E9EBA735576B6E00D7EE31C8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IntentFlowDemoApp;
+			packageProductDependencies = (
+				7A51AA580E50023622F80CA6 /* IntentFlow */,
+			);
+			productName = IntentFlowDemoApp;
+			productReference = E997774490A51D3769D3551C /* IntentFlowDemoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8546D8E0DE25396871F0F165 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 52EDE346D62DB87F72CF5A78 /* Build configuration list for PBXProject "IntentFlowDemoApp" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 82006F63FF7FE25F33A94A40;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1493DF3473883AF8AE0E6130 /* XCLocalSwiftPackageReference "../.." */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A96AA110B703E121D0D588B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1CC5AF0D516853873302BEE4 /* IntentFlowDemoApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		92F2128647000C3354EF8580 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02C14C789C21845F01E869D8 /* CheckoutDemo.swift in Sources */,
+				869C9F1E2A3A63144FF05E21 /* DemoRootView.swift in Sources */,
+				D4354B3720B92A6B133B7A8F /* DemoStoreModel.swift in Sources */,
+				1CCE1351E4054D37784F2D6D /* ExampleIndexScreen.swift in Sources */,
+				0ACCE73C562017B9C35A029C /* IntentFlowDemoApp.swift in Sources */,
+				132865EE2B6354CAA3F2B64D /* LoginDemo.swift in Sources */,
+				7BB92A9D91DA8F010C49E185 /* PermissionDemo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		844CD6CF657D8CE7EEE59BCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		9661CAF5327CE465D64E8913 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9B8D5FC661127B94361493CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = IntentFlowDemoApp/Support/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.intentflow.demo;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BCE6BC54D1BD22C092F75927 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = IntentFlowDemoApp/Support/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.intentflow.demo;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52EDE346D62DB87F72CF5A78 /* Build configuration list for PBXProject "IntentFlowDemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9661CAF5327CE465D64E8913 /* Debug */,
+				844CD6CF657D8CE7EEE59BCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8A6A8463341B5AECC1AD0197 /* Build configuration list for PBXNativeTarget "IntentFlowDemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B8D5FC661127B94361493CC /* Debug */,
+				BCE6BC54D1BD22C092F75927 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		1493DF3473883AF8AE0E6130 /* XCLocalSwiftPackageReference "../.." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../..;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7A51AA580E50023622F80CA6 /* IntentFlow */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = IntentFlow;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8546D8E0DE25396871F0F165 /* Project object */;
+}

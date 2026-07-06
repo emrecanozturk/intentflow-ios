@@ -11,16 +11,28 @@ enum GeneratorError: Error, CustomStringConvertible {
     case missingFeatureName
     case invalidMode(String)
     case invalidUI(String)
+    case missingManifestPath
 
     var description: String {
         switch self {
         case .missingFeatureName:
-            return "Usage: intentflow-generate feature <Name> [--mode core|ai] [--ui swiftui|uikit|none] [--output path]"
+            return Self.usage
         case .invalidMode(let value):
             return "Invalid mode '\(value)'. Expected core or ai."
         case .invalidUI(let value):
             return "Invalid ui '\(value)'. Expected swiftui, uikit, or none."
+        case .missingManifestPath:
+            return "Usage: intentflow validate <path-to-manifest.intentflow.yaml>"
         }
+    }
+
+    static var usage: String {
+        """
+        Usage:
+          intentflow feature <Name> [--mode core|ai] [--ui swiftui|uikit|none] [--output path]
+          intentflow generate feature <Name> [--mode core|ai] [--ui swiftui|uikit|none] [--output path]
+          intentflow validate <path-to-manifest.intentflow.yaml>
+        """
     }
 }
 
@@ -37,6 +49,32 @@ struct IntentFlowGenerate {
     }
 
     static func run(arguments: [String]) throws {
+        guard let command = arguments.first else {
+            throw GeneratorError.missingFeatureName
+        }
+
+        switch command {
+        case "feature":
+            try runFeature(arguments: arguments)
+        case "generate":
+            try runGenerate(arguments: Array(arguments.dropFirst()))
+        case "validate":
+            try runValidate(arguments: Array(arguments.dropFirst()))
+        case "--help", "-h", "help":
+            print(GeneratorError.usage)
+        default:
+            throw GeneratorError.missingFeatureName
+        }
+    }
+
+    static func runGenerate(arguments: [String]) throws {
+        guard arguments.first == "feature" else {
+            throw GeneratorError.missingFeatureName
+        }
+        try runFeature(arguments: arguments)
+    }
+
+    static func runFeature(arguments: [String]) throws {
         guard arguments.first == "feature", arguments.count >= 2 else {
             throw GeneratorError.missingFeatureName
         }
@@ -79,6 +117,34 @@ struct IntentFlowGenerate {
         }
 
         try generate(name: name, mode: mode, ui: ui, output: output)
+    }
+
+    static func runValidate(arguments: [String]) throws {
+        guard let path = arguments.first else {
+            throw GeneratorError.missingManifestPath
+        }
+
+        let manifest = try loadManifest(at: URL(fileURLWithPath: path))
+        let issues = FlowManifestValidator().validate(manifest)
+        let errors = issues.filter { $0.severity == .error }
+
+        if issues.isEmpty {
+            print("IntentFlow manifest is valid: \(manifest.feature)")
+            return
+        }
+
+        for issue in issues {
+            print("[\(issue.severity.rawValue)] \(issue.message)")
+        }
+
+        if !errors.isEmpty {
+            Foundation.exit(1)
+        }
+    }
+
+    static func loadManifest(at url: URL) throws -> FlowManifest {
+        let source = try String(contentsOf: url, encoding: .utf8)
+        return try FlowManifestYAMLParser().parse(source)
     }
 
     static func generate(

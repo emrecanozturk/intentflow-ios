@@ -1,0 +1,26 @@
+name: Release Check
+
+on:
+  push:
+    tags:
+      - "[0-9]+.[0-9]+.[0-9]+"
+  workflow_dispatch:
+
+jobs:
+  release-check:
+    name: Release Readiness
+    runs-on: macos-15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run Full Check
+        run: scripts/check.sh
+
+      - name: Verify Changelog Mentions Version
+        run: |
+          VERSION="${GITHUB_REF_NAME:-manual}"
+          if [[ "$VERSION" != "manual" ]]; then
+            grep -q "$VERSION" CHANGELOG.md
+          fi

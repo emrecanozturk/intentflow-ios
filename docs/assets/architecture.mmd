@@ -1,0 +1,10 @@
+flowchart LR
+    UI["SwiftUI / UIKit Adapter"] -->|Intent| Store["FlowStore Actor"]
+    Store --> Reducer["Pure FlowReducer"]
+    Reducer -->|Next State| Store
+    Reducer -->|EffectRequest| Effects["FlowEffectHandler"]
+    Reducer -->|Route| Router["App Router"]
+    Reducer -->|Output| Parent["Parent Flow / App Shell"]
+    Effects -->|Event| Store
+    Store --> Projection["FlowProjection"]
+    Projection -->|ViewState| UI

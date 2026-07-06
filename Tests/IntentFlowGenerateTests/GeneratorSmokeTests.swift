@@ -31,4 +31,24 @@ final class GeneratorSmokeTests: XCTestCase {
 
         XCTAssertTrue(FileManager.default.fileExists(atPath: directory.appendingPathComponent("Checkout/Checkout.intentflow.yaml").path))
     }
+
+    func testValidateLoadsManifest() throws {
+        let directory = URL(fileURLWithPath: NSTemporaryDirectory())
+            .appendingPathComponent(UUID().uuidString, isDirectory: true)
+
+        try IntentFlowGenerate.generate(
+            name: "Checkout",
+            mode: .ai,
+            ui: .none,
+            output: directory
+        )
+
+        let manifest = try IntentFlowGenerate.loadManifest(
+            at: directory.appendingPathComponent("Checkout/Checkout.intentflow.yaml")
+        )
+
+        XCTAssertEqual(manifest.feature, "Checkout")
+        XCTAssertEqual(manifest.mode, .ai)
+        XCTAssertEqual(manifest.states.first, "idle")
+    }
 }

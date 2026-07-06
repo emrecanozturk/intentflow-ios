@@ -20,6 +20,10 @@ let package = Package(
         .executable(
             name: "intentflow-generate",
             targets: ["IntentFlowGenerate"]
+        ),
+        .executable(
+            name: "intentflow",
+            targets: ["IntentFlowGenerate"]
         )
     ],
     targets: [

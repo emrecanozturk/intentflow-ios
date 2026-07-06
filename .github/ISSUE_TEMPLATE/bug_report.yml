@@ -1,0 +1,33 @@
+name: Bug Report
+description: Report a defect in IntentFlow runtime, docs, examples, or generator.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Include a minimal flow, manifest, or command.
+      render: swift
+    validations:
+      required: false
+  - type: input
+    id: version
+    attributes:
+      label: IntentFlow Version
+      placeholder: 0.1.0
+    validations:
+      required: false

@@ -1,0 +1,25 @@
+@Tutorial(time: 15) {
+    @Intro(title: "Build Your First IntentFlow Feature") {
+        Model a feature as a workflow before writing UI.
+    }
+
+    @Section(title: "Create the Contract") {
+        @ContentAndMedia {
+            Define the possible states, user intents, external events, effects, outputs, and routes.
+        }
+
+        @Code(name: "LoginContract.swift", file: "LoginContract.swift")
+    }
+
+    @Section(title: "Write the Flow") {
+        @ContentAndMedia {
+            Implement a pure reducer that returns the next state and requested work.
+        }
+    }
+
+    @Section(title: "Test the Trace") {
+        @ContentAndMedia {
+            Verify behavior without launching UI.
+        }
+    }
+}

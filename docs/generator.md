@@ -5,13 +5,19 @@ IntentFlow includes a small generator CLI.
 ## Generate Core Feature
 
 ```bash
-swift run intentflow-generate feature Profile --mode core --ui none --output ./Sources/Features
+swift run intentflow feature Profile --mode core --ui none --output ./Sources/Features
 ```
 
 ## Generate AI Feature
 
 ```bash
-swift run intentflow-generate feature Checkout --mode ai --ui swiftui --output ./Sources/Features
+swift run intentflow feature Checkout --mode ai --ui swiftui --output ./Sources/Features
+```
+
+## Validate Manifest
+
+```bash
+swift run intentflow validate .intentflow/login.intentflow.yaml
 ```
 
 ## Output

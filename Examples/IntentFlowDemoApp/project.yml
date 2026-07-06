@@ -1,0 +1,19 @@
+name: IntentFlowDemoApp
+options:
+  bundleIdPrefix: dev.intentflow
+packages:
+  IntentFlow:
+    path: ../..
+targets:
+  IntentFlowDemoApp:
+    type: application
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources:
+      - IntentFlowDemoApp
+    dependencies:
+      - package: IntentFlow
+        product: IntentFlow
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: dev.intentflow.demo
+      INFOPLIST_FILE: IntentFlowDemoApp/Support/Info.plist

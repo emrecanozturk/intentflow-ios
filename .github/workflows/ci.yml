@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    name: Swift Package Tests
+    runs-on: macos-15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode.app
+
+      - name: Swift Version
+        run: swift --version
+
+      - name: Test
+        run: swift test
+
+      - name: Generator Smoke Test
+        run: swift run intentflow feature SmokeFeature --mode ai --ui none --output /tmp/intentflow-smoke
+
+      - name: Manifest Validation
+        run: swift run intentflow validate .intentflow/login.intentflow.yaml
+
+      - name: Demo App Build
+        run: |
+          xcodebuild \
+            -project Examples/IntentFlowDemoApp/IntentFlowDemoApp.xcodeproj \
+            -scheme IntentFlowDemoApp \
+            -destination 'generic/platform=iOS Simulator' \
+            CODE_SIGNING_ALLOWED=NO \
+            build

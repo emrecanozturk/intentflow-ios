@@ -1,0 +1,10 @@
+flowchart TD
+    Manifest[".intentflow.yaml"] --> Contract["Swift Contract Types"]
+    Manifest --> Rules["Cursor / Copilot Rules"]
+    Manifest --> Generator["intentflow CLI"]
+    Manifest --> Tests["Acceptance Trace Tests"]
+    Contract --> Flow["FlowReducer"]
+    Flow --> Validator["Manifest Validator"]
+    Rules --> Agent["AI Coding Agent"]
+    Agent --> Flow
+    Agent --> Tests
