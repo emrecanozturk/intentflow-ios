@@ -20,6 +20,17 @@ swift run intentflow feature Checkout --mode ai --ui swiftui --output ./Sources/
 swift run intentflow validate .intentflow/login.intentflow.yaml
 ```
 
+## Generate AI Context
+
+```bash
+swift run intentflow ai-context .intentflow/login.intentflow.yaml --tool codex
+swift run intentflow ai-context .intentflow/login.intentflow.yaml --tool claude
+swift run intentflow ai-context .intentflow/login.intentflow.yaml --tool gemini
+swift run intentflow ai-context .intentflow/login.intentflow.yaml --tool copilot
+```
+
+The context output is a compact Markdown handoff for coding agents. It includes the manifest contract, invariants, acceptance traces, provider-specific instruction files, and verification commands.
+
 ## Output
 
 ```text
@@ -43,6 +54,7 @@ It should:
 - include explicit loading and failure states
 - include cancellation ID usage
 - include AI manifest when requested
+- produce compact AI context from a manifest
 
 It should not:
 

@@ -1,5 +1,15 @@
 # Changelog
 
+## Unreleased
+
+Added:
+
+- multi-agent instruction surfaces for Codex, Claude Code, Gemini CLI, Copilot, and Cursor
+- `intentflow ai-context` command for compact provider-specific AI handoffs
+- token-budgeting and agent-usage documentation
+- path-scoped Claude and Copilot rules
+- reusable AI prompt templates under `.intentflow/prompts`
+
 ## 0.1.0
 
 Initial architecture proposal.

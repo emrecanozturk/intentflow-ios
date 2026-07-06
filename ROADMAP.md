@@ -11,6 +11,8 @@ IntentFlow is release-ready as a 0.1 architecture proposal. The roadmap is inten
 - Buildable demo app
 - Migration guides
 - CI, DocC, release checklist
+- Multi-agent AI instruction surfaces
+- Compact `intentflow ai-context` handoff command
 
 ## 0.2.0
 

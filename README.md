@@ -49,6 +49,26 @@ Core is the architecture.
 
 AI mode is the architecture plus a machine-readable contract so AI tools know what they are allowed to change.
 
+## AI Agent Support
+
+IntentFlow includes provider-specific instruction surfaces so AI tools can work from the same architecture contract:
+
+| Tool | Files |
+|---|---|
+| Codex | `AGENTS.md`, `.ai/agent-context.md` |
+| Claude Code | `CLAUDE.md`, `.claude/rules/*.md` |
+| Gemini CLI | `GEMINI.md`, `.geminiignore` |
+| GitHub Copilot | `.github/copilot-instructions.md`, `.github/instructions/*.instructions.md` |
+| Cursor | `.cursor/rules/intentflow.mdc` |
+
+Generate compact context for an agent instead of loading the whole repository:
+
+```bash
+swift run intentflow ai-context .intentflow/login.intentflow.yaml --tool codex
+```
+
+See [AI Agent Usage](docs/ai/agent-usage.md) and [Context Budgeting](docs/ai/context-budgeting.md).
+
 ## What It Completes
 
 | Existing Pattern | What It Gets Right | What IntentFlow Adds |
@@ -248,6 +268,8 @@ swift run intentflow validate .intentflow/login.intentflow.yaml
 - [Manifesto](docs/manifesto.md)
 - [Design Principles](docs/rationale/design-principles.md)
 - [IntentFlow AI](docs/ai/intentflow-ai.md)
+- [AI Agent Usage](docs/ai/agent-usage.md)
+- [Context Budgeting](docs/ai/context-budgeting.md)
 - [Migration Guide](docs/migration/migration-guide.md)
 - [Memory and Concurrency](docs/advanced/memory-and-concurrency.md)
 - [Generator](docs/generator.md)

@@ -1,0 +1,16 @@
+.git/
+.build/
+DerivedData/
+*.xcuserstate
+*.xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.png
+*.jpg
+*.jpeg
+*.heic
+*.gif
+*.mov
+*.mp4
+*.log
+tmp/
+/tmp/

@@ -1,4 +1,5 @@
 import XCTest
+import IntentFlowAI
 @testable import IntentFlowGenerate
 
 final class GeneratorSmokeTests: XCTestCase {
@@ -50,5 +51,29 @@ final class GeneratorSmokeTests: XCTestCase {
         XCTAssertEqual(manifest.feature, "Checkout")
         XCTAssertEqual(manifest.mode, .ai)
         XCTAssertEqual(manifest.states.first, "idle")
+    }
+
+    func testAIContextRendersToolSpecificInstructions() throws {
+        let manifest = FlowManifest(
+            feature: "Login",
+            mode: .ai,
+            summary: "Authenticate a user.",
+            states: ["idle", "authenticated(userID)"],
+            intents: ["submit(email,password)"],
+            events: ["tokenReceived(userID)"],
+            effects: ["requestToken"],
+            routes: ["twoFactor"],
+            outputs: ["completed(userID)"],
+            invariants: ["authenticated must always include a userID."],
+            acceptanceTraces: ["idle + submit -> requestToken effect"]
+        )
+
+        let context = AIContextTemplate.render(manifest: manifest, tool: .codex)
+
+        XCTAssertTrue(context.contains("Feature: Login"))
+        XCTAssertTrue(context.contains("Tool: Codex"))
+        XCTAssertTrue(context.contains("AGENTS.md"))
+        XCTAssertTrue(context.contains("authenticated must always include a userID."))
+        XCTAssertTrue(context.contains("swift run intentflow validate <manifest-path>"))
     }
 }

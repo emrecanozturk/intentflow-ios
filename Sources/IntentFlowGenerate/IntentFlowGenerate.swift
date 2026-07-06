@@ -11,6 +11,7 @@ enum GeneratorError: Error, CustomStringConvertible {
     case missingFeatureName
     case invalidMode(String)
     case invalidUI(String)
+    case invalidTool(String)
     case missingManifestPath
 
     var description: String {
@@ -21,8 +22,11 @@ enum GeneratorError: Error, CustomStringConvertible {
             return "Invalid mode '\(value)'. Expected core or ai."
         case .invalidUI(let value):
             return "Invalid ui '\(value)'. Expected swiftui, uikit, or none."
+        case .invalidTool(let value):
+            let expected = AITool.allCases.map(\.rawValue).joined(separator: ", ")
+            return "Invalid tool '\(value)'. Expected one of: \(expected)."
         case .missingManifestPath:
-            return "Usage: intentflow validate <path-to-manifest.intentflow.yaml>"
+            return Self.usage
         }
     }
 
@@ -32,6 +36,7 @@ enum GeneratorError: Error, CustomStringConvertible {
           intentflow feature <Name> [--mode core|ai] [--ui swiftui|uikit|none] [--output path]
           intentflow generate feature <Name> [--mode core|ai] [--ui swiftui|uikit|none] [--output path]
           intentflow validate <path-to-manifest.intentflow.yaml>
+          intentflow ai-context <path-to-manifest.intentflow.yaml> [--tool codex|claude|gemini|copilot|generic]
         """
     }
 }
@@ -60,6 +65,8 @@ struct IntentFlowGenerate {
             try runGenerate(arguments: Array(arguments.dropFirst()))
         case "validate":
             try runValidate(arguments: Array(arguments.dropFirst()))
+        case "ai-context":
+            try runAIContext(arguments: Array(arguments.dropFirst()))
         case "--help", "-h", "help":
             print(GeneratorError.usage)
         default:
@@ -140,6 +147,35 @@ struct IntentFlowGenerate {
         if !errors.isEmpty {
             Foundation.exit(1)
         }
+    }
+
+    static func runAIContext(arguments: [String]) throws {
+        guard let path = arguments.first, !path.hasPrefix("--") else {
+            throw GeneratorError.missingManifestPath
+        }
+
+        var tool = AITool.generic
+        var index = 1
+
+        while index < arguments.count {
+            let argument = arguments[index]
+            let value = index + 1 < arguments.count ? arguments[index + 1] : nil
+
+            switch argument {
+            case "--tool":
+                guard let value, let parsed = AITool(rawValue: value) else {
+                    throw GeneratorError.invalidTool(value ?? "")
+                }
+                tool = parsed
+                index += 2
+
+            default:
+                index += 1
+            }
+        }
+
+        let manifest = try loadManifest(at: URL(fileURLWithPath: path))
+        print(AIContextTemplate.render(manifest: manifest, tool: tool))
     }
 
     static func loadManifest(at url: URL) throws -> FlowManifest {
