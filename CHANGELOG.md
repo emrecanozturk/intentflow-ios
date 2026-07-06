@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.1.3
+
+Final public-documentation cleanup before launch.
+
+Changed:
+
+- keeps public docs focused on product behavior, adoption, examples, and AI agent usage
+- keeps README installation instructions pointed at the latest release
+
 ## 0.1.2
 
 Cleaned launch release.
@@ -7,7 +16,7 @@ Cleaned launch release.
 Changed:
 
 - clarifies that README `Login` contract types are examples, not required shared app types
-- removes personal launch copy from public documentation
+- keeps public docs focused on product behavior and first-time adoption
 - keeps public first-visit docs focused on quick start, FAQ, examples, and AI agent usage
 
 ## 0.1.1
