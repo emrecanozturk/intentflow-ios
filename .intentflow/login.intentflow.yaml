@@ -1,0 +1,39 @@
+schemaVersion: "0.1"
+feature: "Login"
+mode: "ai"
+summary: "Authenticate a user with optional two-factor verification."
+states:
+  - idle
+  - validating(form)
+  - requestingToken
+  - waitingForTwoFactor
+  - failed(message)
+  - authenticated(userID)
+intents:
+  - submit(email,password)
+  - submitTwoFactor(code)
+  - retry
+  - cancel
+events:
+  - credentialsValid
+  - credentialsInvalid(message)
+  - tokenRequiresTwoFactor
+  - tokenReceived(userID)
+  - tokenFailed(message)
+effects:
+  - validateCredentials(form)
+  - requestToken
+  - verifyTwoFactor(code)
+routes:
+  - twoFactor
+outputs:
+  - completed(userID)
+invariants:
+  - "A two-factor code can only be submitted from waitingForTwoFactor."
+  - "authenticated must always include a userID."
+  - "cancel must cancel validate, token, and two-factor effects."
+acceptanceTraces:
+  - "idle + submit(valid form) -> validating + validateCredentials effect"
+  - "validating + credentialsValid -> requestingToken + requestToken effect"
+  - "requestingToken + tokenRequiresTwoFactor -> waitingForTwoFactor + twoFactor route"
+  - "requestingToken + tokenReceived -> authenticated + completed output"

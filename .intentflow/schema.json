@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://intentflow.dev/schema/intentflow-0.1.json",
+  "title": "IntentFlow Manifest",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "feature",
+    "mode",
+    "summary",
+    "states",
+    "intents",
+    "events",
+    "effects",
+    "routes",
+    "outputs",
+    "invariants",
+    "acceptanceTraces"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string"
+    },
+    "feature": {
+      "type": "string",
+      "minLength": 1
+    },
+    "mode": {
+      "enum": ["core", "ai"]
+    },
+    "summary": {
+      "type": "string"
+    },
+    "states": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "intents": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "events": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "effects": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "routes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "outputs": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "invariants": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "acceptanceTraces": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}
