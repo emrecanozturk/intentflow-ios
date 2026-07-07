@@ -2,6 +2,7 @@
 
 [![CI](https://github.com/emrecanozturk/intentflow-ios/actions/workflows/ci.yml/badge.svg)](https://github.com/emrecanozturk/intentflow-ios/actions/workflows/ci.yml)
 [![Documentation](https://github.com/emrecanozturk/intentflow-ios/actions/workflows/docs.yml/badge.svg)](https://github.com/emrecanozturk/intentflow-ios/actions/workflows/docs.yml)
+[![CodeQL](https://github.com/emrecanozturk/intentflow-ios/actions/workflows/codeql.yml/badge.svg)](https://github.com/emrecanozturk/intentflow-ios/actions/workflows/codeql.yml)
 [![Release](https://img.shields.io/github/v/release/emrecanozturk/intentflow-ios)](https://github.com/emrecanozturk/intentflow-ios/releases)
 [![License](https://img.shields.io/github/license/emrecanozturk/intentflow-ios)](LICENSE)
 ![Swift](https://img.shields.io/badge/Swift-6.0-orange)
@@ -103,6 +104,7 @@ See [AI Agent Usage](docs/ai/agent-usage.md) and [Context Budgeting](docs/ai/con
 
 ## Launch Resources
 
+- [Versioned Wiki](docs/wiki/Home.md)
 - [Quick Start](docs/adoption/quick-start.md)
 - [FAQ](docs/faq.md)
 - [IntentFlow 0.1.3 Release](docs/release/0.1.3.md)
@@ -302,6 +304,8 @@ swift run intentflow validate .intentflow/login.intentflow.yaml
 
 ## Documentation
 
+- [Versioned Wiki](docs/wiki/Home.md)
+- [Support](SUPPORT.md)
 - [Pattern Research Matrix](docs/rationale/pattern-research-matrix.md)
 - [Manifesto](docs/manifesto.md)
 - [Design Principles](docs/rationale/design-principles.md)
@@ -314,6 +318,12 @@ swift run intentflow validate .intentflow/login.intentflow.yaml
 - [Memory and Concurrency](docs/advanced/memory-and-concurrency.md)
 - [Generator](docs/generator.md)
 - [Roadmap](ROADMAP.md)
+
+The `docs/wiki` directory is the source of truth for the GitHub Wiki. After GitHub creates the separate wiki repository, publish it with:
+
+```bash
+./scripts/publish-wiki.sh
+```
 
 ## Project Status
 

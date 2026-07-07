@@ -1,0 +1,51 @@
+name: Feature Request
+description: Suggest a runtime, generator, documentation, or example improvement.
+title: "[Feature]: "
+labels: ["enhancement", "needs triage"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Runtime
+        - Generator
+        - AI manifest
+        - AI agent rules
+        - SwiftUI example
+        - UIKit example
+        - Migration guide
+        - Documentation
+        - Release process
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What workflow, adoption issue, or developer experience gap should this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed Solution
+      description: Describe the API, generated file, rule, example, or documentation you expect.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: What can users do today, and why is it not enough?
+    validations:
+      required: false
+  - type: textarea
+    id: example
+    attributes:
+      label: Example Workflow
+      description: If possible, show states, intents, effects, routes, outputs, or a manifest excerpt.
+      render: yaml
+    validations:
+      required: false

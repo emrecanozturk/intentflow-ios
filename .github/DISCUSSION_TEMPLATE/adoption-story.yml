@@ -1,0 +1,24 @@
+title: "[Adoption Story] "
+labels: ["adoption"]
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: What app, module, or feature did you try IntentFlow with?
+    validations:
+      required: true
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Workflow Shape
+      description: Describe the states, intents, events, effects, routes, and outputs you modeled.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Outcome
+      description: What became clearer, what remained awkward, and what should improve?
+    validations:
+      required: true

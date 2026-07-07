@@ -1,5 +1,11 @@
 blank_issues_enabled: false
 contact_links:
+  - name: Versioned Wiki
+    url: https://github.com/emrecanozturk/intentflow-ios/tree/main/docs/wiki
+    about: Read the full product guide, adoption map, AI playbook, and migration notes.
   - name: Quick Start
     url: https://github.com/emrecanozturk/intentflow-ios/blob/main/docs/adoption/quick-start.md
     about: Start here if you want to try IntentFlow on one feature.
+  - name: Support Guide
+    url: https://github.com/emrecanozturk/intentflow-ios/blob/main/SUPPORT.md
+    about: Learn which issue template or discussion format to use.

@@ -1,0 +1,15 @@
+# IntentFlow Wiki
+
+- [Home](Home)
+- [Start Here](Start-Here)
+- [Core Concepts](Core-Concepts)
+- [Core vs AI](Core-vs-AI)
+- [Architecture Lifecycle](Architecture-Lifecycle)
+- [Generator and Manifests](Generator-and-Manifests)
+- [AI Agent Playbook](AI-Agent-Playbook)
+- [Examples and Recipes](Examples-and-Recipes)
+- [Migration Playbook](Migration-Playbook)
+- [Testing and Quality](Testing-and-Quality)
+- [Troubleshooting](Troubleshooting)
+- [Contributing and Governance](Contributing-and-Governance)
+- [FAQ](FAQ)

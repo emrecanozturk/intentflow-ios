@@ -1,0 +1,26 @@
+name: Documentation Feedback
+description: Report unclear, missing, or outdated documentation.
+title: "[Docs]: "
+labels: ["documentation", "needs triage"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page Or File
+      placeholder: docs/wiki/Core-Concepts.md
+    validations:
+      required: true
+  - type: textarea
+    id: unclear
+    attributes:
+      label: What Is Unclear Or Missing?
+      description: Tell us what question remained after reading.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Guidance
+      description: What would have helped you move forward?
+    validations:
+      required: false
