@@ -24,7 +24,7 @@ fi
 rm -rf "$WORK_DIR"
 git clone "$WIKI_REMOTE" "$WORK_DIR"
 
-rsync -a --delete --exclude "README.md" "$WIKI_SOURCE/" "$WORK_DIR/"
+rsync -a --delete --exclude ".git/" --exclude "README.md" "$WIKI_SOURCE/" "$WORK_DIR/"
 
 cd "$WORK_DIR"
 if git diff --quiet && git diff --cached --quiet && [ -z "$(git status --short)" ]; then
