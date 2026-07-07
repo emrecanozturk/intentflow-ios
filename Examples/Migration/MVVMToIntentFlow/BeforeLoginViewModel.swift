@@ -1,4 +1,5 @@
 import Foundation
+import Combine
 
 final class BeforeLoginViewModel: ObservableObject {
     @Published var email = ""
@@ -35,7 +36,7 @@ final class BeforeLoginViewModel: ObservableObject {
                 if response.requiresTwoFactor {
                     self.onTwoFactor?()
                 } else {
-                    self.onCompleted(response.userID)
+                    self.onCompleted?(response.userID)
                 }
             case .failure(let error):
                 self.errorMessage = error.localizedDescription

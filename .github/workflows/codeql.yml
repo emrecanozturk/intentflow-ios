@@ -30,7 +30,14 @@ jobs:
           build-mode: manual
 
       - name: Build for CodeQL
-        run: swift build --arch "$(uname -m)"
+        run: |
+          swift build --build-tests --arch "$(uname -m)"
+          xcodebuild \
+            -project Examples/IntentFlowDemoApp/IntentFlowDemoApp.xcodeproj \
+            -scheme IntentFlowDemoApp \
+            -destination "generic/platform=iOS Simulator" \
+            CODE_SIGNING_ALLOWED=NO \
+            build
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v4

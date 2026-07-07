@@ -10,7 +10,17 @@ targets:
     platform: iOS
     deploymentTarget: "16.0"
     sources:
-      - IntentFlowDemoApp
+      - path: IntentFlowDemoApp
+      - path: ../SwiftUIExample/Sources
+        group: Examples/SwiftUIExample
+      - path: ../UIKitExample/Sources
+        group: Examples/UIKitExample
+      - path: ../Migration/MVVMToIntentFlow
+        group: Examples/Migration/MVVMToIntentFlow
+        excludes:
+          - README.md
+      - path: ../../Sources/IntentFlow/IntentFlow.docc/Tutorials/GettingStarted/LoginContract.swift
+        group: Documentation/Tutorials
     dependencies:
       - package: IntentFlow
         product: IntentFlow

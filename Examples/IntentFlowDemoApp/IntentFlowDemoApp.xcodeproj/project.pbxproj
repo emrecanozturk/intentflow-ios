@@ -7,26 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		004DA264FEA884540CAAD3E0 /* DeviceConnectionEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1BA2257900C560C30AB2EA /* DeviceConnectionEffects.swift */; };
 		02C14C789C21845F01E869D8 /* CheckoutDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2AEF17D617027345AA076E /* CheckoutDemo.swift */; };
 		0ACCE73C562017B9C35A029C /* IntentFlowDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DDBBAD9EAB1636B4F73DF1 /* IntentFlowDemoApp.swift */; };
+		10D5A9CFBF8A82E495BF1335 /* BeforeLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE20E9FF9FF5AEE94B9CFBA /* BeforeLoginViewModel.swift */; };
 		132865EE2B6354CAA3F2B64D /* LoginDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12961EE16A4394E6DC3435AA /* LoginDemo.swift */; };
 		1CCE1351E4054D37784F2D6D /* ExampleIndexScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED22A985879055712BFF8D9 /* ExampleIndexScreen.swift */; };
+		291AEA6DEFB527E48ED5E39D /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817002447E81933F05030AFE /* UploadViewController.swift */; };
+		33496A06D7B3FAD4304CE42E /* UploadContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = A643D9FB4FC11E537D7D7416 /* UploadContract.swift */; };
+		3DF1761A503F13E3F61ECED2 /* LoginContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCD4CF82E0545625C00B20C /* LoginContract.swift */; };
+		435082CAE15E1578E1617525 /* DeviceConnectionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A1F0C4325A938A1625EDDB /* DeviceConnectionScreen.swift */; };
+		5AC16DBFDAC19957D5DAC15A /* UploadProjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BCDCD3A43B11B11956D627 /* UploadProjection.swift */; };
+		5FAC661193DD94EFD71FF691 /* AfterLoginContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C08BA70059E6239601FE4F /* AfterLoginContract.swift */; };
+		6F4EAFCAC577268AEF647A94 /* DeviceConnectionFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADBD1F2C49538DFDE70D638 /* DeviceConnectionFlow.swift */; };
 		7BB92A9D91DA8F010C49E185 /* PermissionDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A588016E75440791842C730B /* PermissionDemo.swift */; };
 		869C9F1E2A3A63144FF05E21 /* DemoRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6447302000CF1E35F7B9EBC2 /* DemoRootView.swift */; };
+		9B83572255397B7BCFB4E683 /* AfterLoginFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA80E4E973036F8AAE5B141 /* AfterLoginFlow.swift */; };
 		ABBCF248D94118316A071D3A /* IntentFlow in Frameworks */ = {isa = PBXBuildFile; productRef = 7A51AA580E50023622F80CA6 /* IntentFlow */; };
 		D4354B3720B92A6B133B7A8F /* DemoStoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432D15F3B102F4A3D4A241C3 /* DemoStoreModel.swift */; };
+		DB6E6FFF420B720451D6B699 /* DeviceConnectionProjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D610E69CEDF4FDB8F31CD24 /* DeviceConnectionProjection.swift */; };
+		DBA3ED3D2A9762424D4B085A /* DeviceConnectionContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B16885404EDA0516F4EDCB0 /* DeviceConnectionContract.swift */; };
+		DF13923923A242592D474B79 /* UploadEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6C5DCEB30707AB82A8DC3F /* UploadEffects.swift */; };
+		ED74714D21A485A2A7E9127D /* UploadFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F309FC38F1A8E8B5DC685B /* UploadFlow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05C08BA70059E6239601FE4F /* AfterLoginContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterLoginContract.swift; sourceTree = "<group>"; };
+		0ADBD1F2C49538DFDE70D638 /* DeviceConnectionFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceConnectionFlow.swift; sourceTree = "<group>"; };
 		12961EE16A4394E6DC3435AA /* LoginDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDemo.swift; sourceTree = "<group>"; };
+		1BE20E9FF9FF5AEE94B9CFBA /* BeforeLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeforeLoginViewModel.swift; sourceTree = "<group>"; };
+		1F6C5DCEB30707AB82A8DC3F /* UploadEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadEffects.swift; sourceTree = "<group>"; };
 		432D15F3B102F4A3D4A241C3 /* DemoStoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoStoreModel.swift; sourceTree = "<group>"; };
+		4B16885404EDA0516F4EDCB0 /* DeviceConnectionContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceConnectionContract.swift; sourceTree = "<group>"; };
 		58DDBBAD9EAB1636B4F73DF1 /* IntentFlowDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentFlowDemoApp.swift; sourceTree = "<group>"; };
 		6447302000CF1E35F7B9EBC2 /* DemoRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoRootView.swift; sourceTree = "<group>"; };
+		6D610E69CEDF4FDB8F31CD24 /* DeviceConnectionProjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceConnectionProjection.swift; sourceTree = "<group>"; };
 		72887CAD6595C86B9F8B9DDD /* intentflow-ios */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "intentflow-ios"; path = ../..; sourceTree = SOURCE_ROOT; };
 		7ED22A985879055712BFF8D9 /* ExampleIndexScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleIndexScreen.swift; sourceTree = "<group>"; };
 		81581CF8D0E30B30A47C4CD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		817002447E81933F05030AFE /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		8C2AEF17D617027345AA076E /* CheckoutDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutDemo.swift; sourceTree = "<group>"; };
+		9FCD4CF82E0545625C00B20C /* LoginContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginContract.swift; path = ../../Sources/IntentFlow/IntentFlow.docc/Tutorials/GettingStarted/LoginContract.swift; sourceTree = "<group>"; };
 		A588016E75440791842C730B /* PermissionDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionDemo.swift; sourceTree = "<group>"; };
+		A643D9FB4FC11E537D7D7416 /* UploadContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadContract.swift; sourceTree = "<group>"; };
+		C3BCDCD3A43B11B11956D627 /* UploadProjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadProjection.swift; sourceTree = "<group>"; };
+		CF1BA2257900C560C30AB2EA /* DeviceConnectionEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceConnectionEffects.swift; sourceTree = "<group>"; };
+		DBA80E4E973036F8AAE5B141 /* AfterLoginFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterLoginFlow.swift; sourceTree = "<group>"; };
+		E3A1F0C4325A938A1625EDDB /* DeviceConnectionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceConnectionScreen.swift; sourceTree = "<group>"; };
+		E4F309FC38F1A8E8B5DC685B /* UploadFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadFlow.swift; sourceTree = "<group>"; };
 		E997774490A51D3769D3551C /* IntentFlowDemoApp.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = IntentFlowDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -54,6 +82,22 @@
 			path = IntentFlowDemoApp;
 			sourceTree = "<group>";
 		};
+		12E02A12EBAF8303A29AEE7D /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				8F065847799E531E84DF1046 /* Tutorials */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+		159C2012A3A19D1B7FFBB12A /* SwiftUIExample */ = {
+			isa = PBXGroup;
+			children = (
+				4BDCA300B100DCB038DCA249 /* Sources */,
+			);
+			name = SwiftUIExample;
+			sourceTree = "<group>";
+		};
 		4210B7D01F43B5FAD274C701 /* Support */ = {
 			isa = PBXGroup;
 			children = (
@@ -63,12 +107,43 @@
 			path = Support;
 			sourceTree = "<group>";
 		};
+		4BDCA300B100DCB038DCA249 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4B16885404EDA0516F4EDCB0 /* DeviceConnectionContract.swift */,
+				CF1BA2257900C560C30AB2EA /* DeviceConnectionEffects.swift */,
+				0ADBD1F2C49538DFDE70D638 /* DeviceConnectionFlow.swift */,
+				6D610E69CEDF4FDB8F31CD24 /* DeviceConnectionProjection.swift */,
+				E3A1F0C4325A938A1625EDDB /* DeviceConnectionScreen.swift */,
+			);
+			name = Sources;
+			path = ../SwiftUIExample/Sources;
+			sourceTree = "<group>";
+		};
 		4D15958CCAC836C39CE670CF /* Login */ = {
 			isa = PBXGroup;
 			children = (
 				12961EE16A4394E6DC3435AA /* LoginDemo.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		56A9095B7035EBAD1EF2910C /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				9E1875E8D5FE56D693335B2E /* Migration */,
+				159C2012A3A19D1B7FFBB12A /* SwiftUIExample */,
+				59BBE8ECD3639901FC737ECC /* UIKitExample */,
+			);
+			name = Examples;
+			sourceTree = "<group>";
+		};
+		59BBE8ECD3639901FC737ECC /* UIKitExample */ = {
+			isa = PBXGroup;
+			children = (
+				8AB999EB9534F8509378AD9D /* Sources */,
+			);
+			name = UIKitExample;
 			sourceTree = "<group>";
 		};
 		81D815BBDAB38827100DB5BA /* Packages */ = {
@@ -82,6 +157,8 @@
 		82006F63FF7FE25F33A94A40 = {
 			isa = PBXGroup;
 			children = (
+				12E02A12EBAF8303A29AEE7D /* Documentation */,
+				56A9095B7035EBAD1EF2910C /* Examples */,
 				10813C266A6E081ADC8FA237 /* IntentFlowDemoApp */,
 				81D815BBDAB38827100DB5BA /* Packages */,
 				A96AA110B703E121D0D588B0 /* Products */,
@@ -94,6 +171,35 @@
 				A588016E75440791842C730B /* PermissionDemo.swift */,
 			);
 			path = Permissions;
+			sourceTree = "<group>";
+		};
+		8AB999EB9534F8509378AD9D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A643D9FB4FC11E537D7D7416 /* UploadContract.swift */,
+				1F6C5DCEB30707AB82A8DC3F /* UploadEffects.swift */,
+				E4F309FC38F1A8E8B5DC685B /* UploadFlow.swift */,
+				C3BCDCD3A43B11B11956D627 /* UploadProjection.swift */,
+				817002447E81933F05030AFE /* UploadViewController.swift */,
+			);
+			name = Sources;
+			path = ../UIKitExample/Sources;
+			sourceTree = "<group>";
+		};
+		8F065847799E531E84DF1046 /* Tutorials */ = {
+			isa = PBXGroup;
+			children = (
+				9FCD4CF82E0545625C00B20C /* LoginContract.swift */,
+			);
+			name = Tutorials;
+			sourceTree = "<group>";
+		};
+		9E1875E8D5FE56D693335B2E /* Migration */ = {
+			isa = PBXGroup;
+			children = (
+				EAD0640D5400F2AFCD1BD73E /* MVVMToIntentFlow */,
+			);
+			name = Migration;
 			sourceTree = "<group>";
 		};
 		9E8EC3FED19A1F87AD4285DD /* Features */ = {
@@ -112,6 +218,25 @@
 				E997774490A51D3769D3551C /* IntentFlowDemoApp.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D08AD4C9C7C9332C7F970886 /* MVVMToIntentFlow */ = {
+			isa = PBXGroup;
+			children = (
+				05C08BA70059E6239601FE4F /* AfterLoginContract.swift */,
+				DBA80E4E973036F8AAE5B141 /* AfterLoginFlow.swift */,
+				1BE20E9FF9FF5AEE94B9CFBA /* BeforeLoginViewModel.swift */,
+			);
+			name = MVVMToIntentFlow;
+			path = ../Migration/MVVMToIntentFlow;
+			sourceTree = "<group>";
+		};
+		EAD0640D5400F2AFCD1BD73E /* MVVMToIntentFlow */ = {
+			isa = PBXGroup;
+			children = (
+				D08AD4C9C7C9332C7F970886 /* MVVMToIntentFlow */,
+			);
+			name = MVVMToIntentFlow;
 			sourceTree = "<group>";
 		};
 		F0F5A247784F657E117983B8 /* Checkout */ = {
@@ -182,13 +307,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FAC661193DD94EFD71FF691 /* AfterLoginContract.swift in Sources */,
+				9B83572255397B7BCFB4E683 /* AfterLoginFlow.swift in Sources */,
+				10D5A9CFBF8A82E495BF1335 /* BeforeLoginViewModel.swift in Sources */,
 				02C14C789C21845F01E869D8 /* CheckoutDemo.swift in Sources */,
 				869C9F1E2A3A63144FF05E21 /* DemoRootView.swift in Sources */,
 				D4354B3720B92A6B133B7A8F /* DemoStoreModel.swift in Sources */,
+				DBA3ED3D2A9762424D4B085A /* DeviceConnectionContract.swift in Sources */,
+				004DA264FEA884540CAAD3E0 /* DeviceConnectionEffects.swift in Sources */,
+				6F4EAFCAC577268AEF647A94 /* DeviceConnectionFlow.swift in Sources */,
+				DB6E6FFF420B720451D6B699 /* DeviceConnectionProjection.swift in Sources */,
+				435082CAE15E1578E1617525 /* DeviceConnectionScreen.swift in Sources */,
 				1CCE1351E4054D37784F2D6D /* ExampleIndexScreen.swift in Sources */,
 				0ACCE73C562017B9C35A029C /* IntentFlowDemoApp.swift in Sources */,
+				3DF1761A503F13E3F61ECED2 /* LoginContract.swift in Sources */,
 				132865EE2B6354CAA3F2B64D /* LoginDemo.swift in Sources */,
 				7BB92A9D91DA8F010C49E185 /* PermissionDemo.swift in Sources */,
+				33496A06D7B3FAD4304CE42E /* UploadContract.swift in Sources */,
+				DF13923923A242592D474B79 /* UploadEffects.swift in Sources */,
+				ED74714D21A485A2A7E9127D /* UploadFlow.swift in Sources */,
+				5AC16DBFDAC19957D5DAC15A /* UploadProjection.swift in Sources */,
+				291AEA6DEFB527E48ED5E39D /* UploadViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
