@@ -71,7 +71,7 @@ Do not keep placeholder domain names just because the generator produced them.
 
 ## CodeQL Takes Longer Than CI
 
-Swift CodeQL builds can take longer because CodeQL extracts a database while building. This is expected. The workflow uses a narrowed manual Swift build to keep it stable.
+Swift CodeQL builds can take longer because CodeQL extracts a database while building. This is expected. The workflow uses a manual Swift build that includes package sources, tests, demo app code, examples, migration samples, and the DocC tutorial Swift sample so the visible CodeQL coverage matches the repository.
 
 ## The GitHub Wiki Tab Is Empty
 

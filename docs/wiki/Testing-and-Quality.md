@@ -85,6 +85,6 @@ The public repository is configured with:
 - private vulnerability reporting
 - Dependabot alerts and security updates
 - secret scanning and push protection
-- CodeQL code scanning
+- CodeQL code scanning across all Swift files built by the package, tests, demo app, examples, migration samples, and DocC tutorial sample
 
 Do not publish fake security advisories. Advisories should exist only for real vulnerabilities.
