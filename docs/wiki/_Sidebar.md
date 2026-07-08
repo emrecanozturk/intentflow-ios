@@ -4,6 +4,7 @@
 
 - [Home](Home)
 - [Start Here](Start-Here)
+- [Community](Community)
 - [FAQ](FAQ)
 
 ## Architecture

@@ -4,9 +4,9 @@ IntentFlow is an experimental iOS architecture proposal. The fastest way to get 
 
 ## Best Channels
 
-- Adoption questions: use the "Adoption Question" issue template.
-- Architecture proposals: use the "Architecture Discussion" issue template or Discussions.
-- AI generation feedback: use the "AI Generation Feedback" issue template.
+- Adoption questions: use GitHub Discussions Q&A when you want modeling help, or the "Adoption Question" issue template when the request is specific and actionable.
+- Architecture proposals: start in Discussions Ideas when the shape is still forming; use the "Architecture Discussion" issue template when the proposal is ready to track.
+- AI generation feedback: use the "AI Generation Feedback" issue template when a tool drifted from a manifest, prompt, or rule.
 - Bugs in the package, examples, generator, or docs: use the "Bug Report" issue template.
 - Security concerns: follow `SECURITY.md` and report privately.
 
@@ -27,7 +27,9 @@ For architecture and adoption questions, include:
 Useful starting points:
 
 - `README.md`
+- `COMMUNITY.md`
 - `docs/wiki/Home.md`
+- `docs/wiki/Community.md`
 - `docs/adoption/quick-start.md`
 - `docs/migration/migration-guide.md`
 - `docs/faq.md`

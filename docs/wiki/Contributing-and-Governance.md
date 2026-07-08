@@ -26,6 +26,18 @@ Use:
 - AI Generation Feedback for agent behavior
 - Documentation Feedback for unclear docs
 
+## Discussion Types
+
+Use GitHub Discussions for:
+
+- adoption questions that need modeling conversation
+- architecture ideas before they are ready for a tracked issue
+- roadmap feedback
+- real-world examples and migration stories
+- AI prompt and manifest guidance
+
+When a discussion becomes concrete work, create or request a focused issue.
+
 ## PR Bar
 
 Every PR should answer:

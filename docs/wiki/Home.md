@@ -19,6 +19,7 @@ The project is not trying to replace every iOS pattern. It is designed for the p
 | Integrate it into an app | [API and Integration Guide](API-and-Integration-Guide) |
 | Generate and validate features | [Generator and Manifests](Generator-and-Manifests) |
 | Use Codex, Claude, Gemini, Copilot, or Cursor | [AI Agent Playbook](AI-Agent-Playbook) |
+| Ask questions or share feedback | [Community](Community) |
 | Migrate from existing patterns | [Migration Playbook](Migration-Playbook) |
 | Check release and security quality | [Operational Readiness](Operational-Readiness) |
 
@@ -69,6 +70,7 @@ docs/wiki/                      Versioned wiki source
 | [API and Integration Guide](API-and-Integration-Guide) | How to wire reducers, stores, effects, projections, SwiftUI, and UIKit. |
 | [Generator and Manifests](Generator-and-Manifests) | CLI usage, generated files, manifests, validation, and context output. |
 | [AI Agent Playbook](AI-Agent-Playbook) | Codex, Claude, Gemini, Copilot, Cursor, and token budgeting. |
+| [Community](Community) | Discussions, issues, support boundaries, and how to give useful feedback. |
 | [Examples and Recipes](Examples-and-Recipes) | SwiftUI, UIKit, migration examples, and common workflow recipes. |
 | [Migration Playbook](Migration-Playbook) | Moving from MVC, MVVM, VIPER, Clean, TCA, RIBs, and Coordinators. |
 | [Testing and Quality](Testing-and-Quality) | Reducer tests, store tests, manifest validation, CI, CodeQL, and release checks. |

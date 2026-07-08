@@ -1,6 +1,10 @@
 title: "[Adoption Story] "
 labels: ["adoption"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for trying IntentFlow. Real adoption notes are the most useful feedback for improving the architecture, examples, generator, and docs.
   - type: textarea
     id: context
     attributes:
@@ -22,3 +26,10 @@ body:
       description: What became clearer, what remained awkward, and what should improve?
     validations:
       required: true
+  - type: textarea
+    id: next
+    attributes:
+      label: Suggested Next Step
+      description: Should this become documentation, an example, a generator improvement, or a runtime change?
+    validations:
+      required: false

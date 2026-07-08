@@ -1,5 +1,11 @@
 blank_issues_enabled: false
 contact_links:
+  - name: GitHub Discussions
+    url: https://github.com/emrecanozturk/intentflow-ios/discussions
+    about: Ask open-ended adoption questions, share workflow modeling ideas, or discuss roadmap direction.
+  - name: Community Guide
+    url: https://github.com/emrecanozturk/intentflow-ios/blob/main/COMMUNITY.md
+    about: Learn when to use Discussions, Issues, Security, or the Wiki.
   - name: Versioned Wiki
     url: https://github.com/emrecanozturk/intentflow-ios/tree/main/docs/wiki
     about: Read the full product guide, adoption map, AI playbook, and migration notes.

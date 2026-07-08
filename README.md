@@ -305,6 +305,7 @@ swift run intentflow validate .intentflow/login.intentflow.yaml
 ## Documentation
 
 - [Versioned Wiki](docs/wiki/Home.md)
+- [Community Guide](COMMUNITY.md)
 - [Support](SUPPORT.md)
 - [Pattern Research Matrix](docs/rationale/pattern-research-matrix.md)
 - [Manifesto](docs/manifesto.md)
@@ -318,6 +319,12 @@ swift run intentflow validate .intentflow/login.intentflow.yaml
 - [Memory and Concurrency](docs/advanced/memory-and-concurrency.md)
 - [Generator](docs/generator.md)
 - [Roadmap](ROADMAP.md)
+
+## Community
+
+- [GitHub Discussions](https://github.com/emrecanozturk/intentflow-ios/discussions): adoption questions, workflow modeling, roadmap ideas, and real-world examples.
+- [Issues](https://github.com/emrecanozturk/intentflow-ios/issues): reproducible bugs, concrete feature requests, documentation gaps, and AI generation feedback.
+- [Community Guide](COMMUNITY.md): how to choose the right channel and write useful architecture feedback.
 
 The `docs/wiki` directory is the source of truth for the GitHub Wiki. After GitHub creates the separate wiki repository, publish it with:
 

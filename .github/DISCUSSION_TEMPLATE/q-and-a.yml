@@ -1,6 +1,10 @@
 title: "[Q&A] "
 labels: ["question"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        For the fastest answer, describe the workflow shape instead of only naming the screen. Include states, intents, events, effects, routes, and outputs if you can.
   - type: textarea
     id: question
     attributes:
@@ -13,5 +17,12 @@ body:
     attributes:
       label: Context
       description: Include the feature shape, current architecture, or docs you already read.
+    validations:
+      required: false
+  - type: textarea
+    id: attempted
+    attributes:
+      label: What You Tried
+      description: Link to docs, examples, manifests, or snippets if relevant.
     validations:
       required: false
