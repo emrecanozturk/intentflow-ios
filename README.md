@@ -104,7 +104,7 @@ See [AI Agent Usage](docs/ai/agent-usage.md) and [Context Budgeting](docs/ai/con
 
 ## Launch Resources
 
-- [Versioned Wiki](docs/wiki/Home.md)
+- [GitHub Wiki](https://github.com/emrecanozturk/intentflow-ios/wiki)
 - [Quick Start](docs/adoption/quick-start.md)
 - [FAQ](docs/faq.md)
 - [IntentFlow 0.1.3 Release](docs/release/0.1.3.md)
@@ -304,7 +304,7 @@ swift run intentflow validate .intentflow/login.intentflow.yaml
 
 ## Documentation
 
-- [Versioned Wiki](docs/wiki/Home.md)
+- [GitHub Wiki](https://github.com/emrecanozturk/intentflow-ios/wiki)
 - [Community Guide](COMMUNITY.md)
 - [Support](SUPPORT.md)
 - [Pattern Research Matrix](docs/rationale/pattern-research-matrix.md)
@@ -325,12 +325,6 @@ swift run intentflow validate .intentflow/login.intentflow.yaml
 - [GitHub Discussions](https://github.com/emrecanozturk/intentflow-ios/discussions): adoption questions, workflow modeling, roadmap ideas, and real-world examples.
 - [Issues](https://github.com/emrecanozturk/intentflow-ios/issues): reproducible bugs, concrete feature requests, documentation gaps, and AI generation feedback.
 - [Community Guide](COMMUNITY.md): how to choose the right channel and write useful architecture feedback.
-
-The `docs/wiki` directory is the source of truth for the GitHub Wiki. After GitHub creates the separate wiki repository, publish it with:
-
-```bash
-./scripts/publish-wiki.sh
-```
 
 ## Project Status
 
